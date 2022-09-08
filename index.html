@@ -8,22 +8,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div>
+      <img class="backgroundmap" src="img/tcg-map.jpg" alt="background" />
+      <button id="attack-button" class="attack-button">Attack</button>
+    </div>
+
     <div class="image-container">
-      <div id="card1" class="card">
-        <img src="img/lara.jpg" alt="card" />
-        <div id="attackDisplayLara" class="text-over-image-left">20</div>
-        <div id="healthDisplayLara" class="text-over-image-right">20</div>
+      <div class="enemycards">
+        <div id="lara" class="card">
+          <img src="img/lara.jpg" alt="card" class="cardimage" />
+          <div id="attackDisplayLara" class="text-over-image-left">20</div>
+          <div id="healthDisplayLara" class="text-over-image-right">20</div>
+        </div>
       </div>
 
       <div class="playercards">
-        <div id="card1" class="card">
-          <img src="img/mage.jpg" alt="card" />
+        <div id="mage" class="card">
+          <img src="img/mage.jpg" alt="card" class="cardimage" />
           <div id="attackDisplayMage" class="text-over-image-left">20</div>
           <div id="healthDisplayMage" class="text-over-image-right">20</div>
         </div>
+
+        <div id="jeanne" class="card">
+          <img src="img/jeanne.jpg" alt="card" class="cardimage" />
+          <div id="attackDisplayJeanne" class="text-over-image-left">20</div>
+          <div id="healthDisplayJeanne" class="text-over-image-right">20</div>
+        </div>
       </div>
     </div>
-    <button id="attack-button" class="attack-button">Attack</button>
     <script src="cardgame.js"></script>
   </body>
 </html>

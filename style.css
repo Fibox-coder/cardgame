@@ -1,16 +1,66 @@
-img {
-  width: 300px;
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.backgroundmap{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  }
+
+  
+.attack-button{
+  position: absolute;
+  top: 40%;
+  right: 172px;
+  padding: 50px 50px;
+  font-size: 40px;
+  background-image: linear-gradient(rgb(45, 71, 218), rgb(12, 158, 184));
+  color: black;
+  border: 0;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  box-shadow: -25px 0px 0px rgb(0, 0, 36);
+  color: white;
+}
+
+.attack-button:hover{
+  background-image: linear-gradient(rgb(199, 79, 9), rgb(240, 142, 29));
+  box-shadow: -25px 0px 0px rgb(68, 44, 0);
+  
+}
+
+
+.cardimage {
+  width: 150px;
   height: auto;
-  margin: 50px;
+  margin: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 3px rgb(65, 129, 226);
+}
+
+.cardimage:hover{
+  box-shadow: 0 0 15px 4px orange;
 }
 
 
 .image-container{
-  margin-left: 10px;
-  margin-right: 10px;
+  height: 99vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .card{
@@ -21,46 +71,46 @@ img {
   font-style: italic;
   font-weight: 600;
   position: absolute;
-  bottom: 70px;
-  left: 70px;
+  bottom: 10px;
+  left: 10px;
   font-size: 2vw;
-  background-color: yellow;
+  background-color: rgb(224, 108, 0);
   border-radius: 50px;
-  padding-left: 20px;
-  padding-right: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-top: 5px;
   padding-bottom: 5px;
-  color: black;
+  color: white;
 }
 
 .text-over-image-right{
-  font-style: italic;
   font-weight: 600;
   position: absolute;
-  bottom: 70px;
-  right: 70px;
+  bottom: 10px;
+  right: 10px;
   font-size: 2vw;
-  background-color: red;
+  background-color: rgb(141, 11, 11);
   border-radius: 50px;
-  padding-left: 20px;
-  padding-right: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-top: 5px;
   padding-bottom: 5px;
-  color: black;
+  color: white;
 }
 
-.attack-button{
-  padding: 10px 40px;
-  font-size: 50px;
-  background-color: lightblue;
-  color: black;
-  border: 0;
-  margin: 0 0 0 400px;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px black;
+.playercards{
+  display: flex;
 }
 
-.attack-button:hover{
-  background-color: orange;
+@media (max-width: 2000px){
+  body{
+    background-color: rgb(206, 200, 197);
+  }
+  .backgroundmap{
+    display: none;
+  }
+  .attack-button{
+    right: 20px;
+  }
+
 }
